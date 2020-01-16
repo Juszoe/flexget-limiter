@@ -32,8 +32,15 @@ limiter:
     read: 10000    # disk read speed KB/s
     write: 10000   # disk write speed KB/s
 ```
+advanced
+```yaml
+limiter:
+  wait: 1          # detection time, second, default: 1s
+  reject: no       # reject all items, yes or no, default: no
+```
 When the system parameter exceeds the configured value, the current Flexget task will stop<br>
 `Note: The configuration can be incomplete, just set the parameters you want to limit`
+
 2. Start Flexget
 ``` bash
 flexget execute

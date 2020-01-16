@@ -32,8 +32,15 @@ limiter:
     read: 10000    # 磁盘读取速度 KB/s
     write: 10000   # 磁盘写入速度 KB/s
 ```
+高级配置
+```yaml
+limiter:
+  wait: 1          # 检测时间 秒 默认1秒
+  reject: no       # 是否拒绝所有的项目 yes或no 默认no
+```
 当系统参数超过配置值时，当前 Flexget 任务将会停止<br>
 `注意：配置可以不完整，只设置你想限制的参数即可`
+
 2. 启动 Flexget
 ``` bash
 flexget execute
