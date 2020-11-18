@@ -47,7 +47,7 @@ flexget execute
 ```
 
 ## 完整配置示例
-上传速度超过 10MB/s 时停止任务
+下载速度超过 10MB/s 时停止任务
 ```yaml
 tasks:
   my-limit-upload-task:
